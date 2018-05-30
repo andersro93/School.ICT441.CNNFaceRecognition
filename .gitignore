@@ -1,0 +1,12 @@
+# Gender list files
+/assets/males.txt
+/assets/females.txt
+
+# Images of persons
+/assets/persons
+
+# Temp files
+/tmp
+
+# IDE files
+.idea
