@@ -67,6 +67,13 @@ class GenderClassifier(object):
             epochs=self.epochs,
             validation_data=self.__keras_test_data)
 
+    def print_model_summary(self):
+        """
+        Prints a summary of the model
+        :return: None
+        """
+        self.__keras_model.summary()
+
     def create_train_verification_data(self):
         """
         Creates training and validation data pairs
