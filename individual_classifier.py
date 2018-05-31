@@ -43,9 +43,6 @@ class IndividualClassifier(object):
         # Calculate the input shape
         self.__calculate_the_input_shape()
 
-        # Find the amount of classes
-        self.__get_the_amount_of_different_persons()
-
         self.__keras_model = Sequential()
         self.__keras_model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=self.input_shape))
         self.__keras_model.add(Conv2D(64, (3, 3), activation='relu'))
